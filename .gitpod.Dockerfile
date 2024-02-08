@@ -20,3 +20,7 @@ USER gitpod
 EXPOSE 3000
 EXPOSE 8080
 EXPOSE 4040
+WORKDIR /Bo
+COPY requirements.txt /Bo/requirements.txt
+RUN pip install pip --upgrade && pip install -r requirements.txt
+COPY src src
