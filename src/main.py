@@ -4,6 +4,8 @@ import pyspark.sql.functions as pf
 from pyspark.sql.types import DateType
 import boto3
 import json
+from data_ingest import ingest_air_quality_data
+
 
 SNOWFLAKE_SOURCE_NAME = "net.snowflake.spark.snowflake"
 
@@ -85,4 +87,5 @@ def load_and_write():
     
 
 if __name__ == "__main__":
+    ingest_air_quality_data()
     load_and_write()
