@@ -62,7 +62,6 @@ def get_snowflake_credentials():
 
 def snowflake_config():
     credentials = get_snowflake_credentials()
-    print(credentials)
     return {
         "sfURL": credentials["URL"],
         "sfUser": credentials["USER_NAME"],
