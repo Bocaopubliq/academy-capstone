@@ -1,0 +1,15 @@
+docker:
+    path: .
+id: f1f282e5-8d0f-4667-bac6-3807b2b00710
+ide:
+    filename: ide.yaml
+name: boconve
+resources:
+    path: resources
+streaming:
+    filename: streaming.yaml
+template: ""
+version: "0.3"
+workflows:
+    path: dags
+    version: "2"
